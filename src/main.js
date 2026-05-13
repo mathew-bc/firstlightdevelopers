@@ -124,7 +124,7 @@ document.querySelector('#app').innerHTML = `
                 text-[clamp(1.8vh,1vw,2vh)]
                 md:text-[clamp(1.6vh,0.9vw,1.9vh)]
             ">
-                A mobile and web-based platform for managing istallations,
+                A mobile and web-based platform for managing installations,
                 quality control, and project delivery across large-scale
                 engineering and infrastructure projects.
             </p>
