@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('./fonts/GeneralSans-Variable.ttf') format('truetype');
+    font-weight: 200 700;
+    font-style: normal;
+}
+
+body {
+    font-family: 'GeneralSans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
