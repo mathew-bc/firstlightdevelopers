@@ -8,7 +8,7 @@ document.querySelector('#app').innerHTML = `
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(255,255,255,0.08),transparent_35%)]"></div>
 
     <!-- Content Container -->
-    <div class="relative z-10 w-full py-[clamp(4vh,8vw,6vh)] px-[clamp(4vh,8vw,6vh)] md:px-[clamp(6vh,3vw,8vh)] md:py-[clamp(6vh,3vw,8vh)]">
+    <div class="relative z-10 w-full py-[clamp(4vh,8vw,6vh)] px-[6vw] md:px-[clamp(6vh,3vw,8vh)] md:py-[clamp(6vh,3vw,8vh)]">
 
         <!-- Header Logo -->
         <img 
@@ -20,7 +20,7 @@ document.querySelector('#app').innerHTML = `
         <!-- Main Heading -->
         <h1 class="
             font-[350]
-            text-[clamp(10vw,5vh,12vw)]
+            text-[clamp(9vw,4.5vh,11vw)]
             leading-[clamp(11vw,5.5vh,13vw)]
             mt-[clamp(10vw,5vh,12vw)]
             md:text-[clamp(10vh,5vw,12vh)]
@@ -34,6 +34,8 @@ document.querySelector('#app').innerHTML = `
 
         <!-- Subtext -->
         <p class="
+            md:max-w-[34ch]
+            max-w-[28ch]
             md:mt-[clamp(4vh,3vw,6vh)]
             mt-[clamp(4vw,2vh,6vw)]
             text-zinc-400
@@ -43,8 +45,7 @@ document.querySelector('#app').innerHTML = `
             md:text-[clamp(3vh,1.5vw,8vh)]
             md:ml-[clamp(8vh,4vw,10vh)]
         ">
-            Technology design for the next <br> 
-            generation of industry.
+            Innovative technology design for the next generation of industry.
         </p>
 
     </div>
@@ -518,6 +519,8 @@ document.querySelector('#app').innerHTML = `
             mt-[2.5vh]
         ">
             <p class="
+                md:max-w-[200ch]
+                max-w-[34ch]
                 text-zinc-400
                 font-light
                 leading-[1.4]
