@@ -12,7 +12,7 @@ document.querySelector('#app').innerHTML = `
 
         <!-- Header Logo -->
         <img 
-            src="/header.png"
+            src="/header.webp"
             alt="First Light"
             class="h-[clamp(10vw,5vh,12vw)] md:h-[clamp(5vh,2.5vw,7vh)] w-auto"
         />
@@ -61,7 +61,7 @@ document.querySelector('#app').innerHTML = `
     ml-[clamp(-5vh,-10vw,-6vh)]
 ">
     <img 
-        src="/Logo.png"
+        src="/Logo.webp"
         alt="First Light mark"
         class="
             h-[70vh]
@@ -158,7 +158,7 @@ document.querySelector('#app').innerHTML = `
 
             <!-- Laptop -->
             <img
-                src="/trace.png"
+                src="/trace.webp"
                 alt="TRACE dashboard"
                 class="
                     relative
@@ -502,7 +502,7 @@ document.querySelector('#app').innerHTML = `
             mt-[clamp(30vw,15vh,35vw)]
         ">
             <img 
-                src="/header.png"
+                src="/header.webp"
                 alt="First Light"
                 class="h-[clamp(5vh,2.5vw,7vh)] w-auto"
             />
