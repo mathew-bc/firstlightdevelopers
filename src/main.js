@@ -8,23 +8,25 @@ document.querySelector('#app').innerHTML = `
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(255,255,255,0.08),transparent_35%)]"></div>
 
     <!-- Content Container -->
-    <div class="relative z-10 w-full px-[8vw] md:px-[clamp(6vh,3vw,8vh)] md:py-[clamp(6vh,3vw,8vh)]">
+    <div class="relative z-10 w-full py-[clamp(4vh,8vw,6vh)] px-[clamp(4vh,8vw,6vh)] md:px-[clamp(6vh,3vw,8vh)] md:py-[clamp(6vh,3vw,8vh)]">
 
         <!-- Header Logo -->
         <img 
             src="/header.png"
             alt="First Light"
-            class="h-[clamp(5vh,2.5vw,7vh)] w-auto"
+            class="h-[clamp(10vw,5vh,12vw)] md:h-[clamp(5vh,2.5vw,7vh)] w-auto"
         />
 
         <!-- Main Heading -->
         <h1 class="
             font-[350]
-            leading-[clamp(12vh,6vw,14vh)]
-            text-[clamp(8vw,6vh,10vw)]
+            text-[clamp(10vw,5vh,12vw)]
+            leading-[clamp(11vw,5.5vh,13vw)]
+            mt-[clamp(10vw,5vh,12vw)]
             md:text-[clamp(10vh,5vw,12vh)]
-            mt-[clamp(16vh,8vw,18vh)]
+            md:mt-[clamp(16vh,8vw,18vh)]
             md:ml-[clamp(8vh,4vw,10vh)]
+            md:leading-[clamp(12vh,6vw,14vh)]
         ">
             Modern products.<br>
             Built thoughtfully.
@@ -32,11 +34,12 @@ document.querySelector('#app').innerHTML = `
 
         <!-- Subtext -->
         <p class="
-            mt-[clamp(4vh,3vw,6vh)]
+            md:mt-[clamp(4vh,3vw,6vh)]
+            mt-[clamp(4vw,2vh,6vw)]
             text-zinc-400
             font-[350]
             leading-[1.4]
-            text-[clamp(2vh,1.2vw,2.2vh)]
+            text-[clamp(4vw,2vh,6svw)]
             md:text-[clamp(3vh,1.5vw,8vh)]
             md:ml-[clamp(8vh,4vw,10vh)]
         ">
@@ -49,15 +52,19 @@ document.querySelector('#app').innerHTML = `
     <!-- Hero Mark -->
     <div class="
     absolute
-    right-[clamp(16vh,8vw,18vh)]
-    top-1/2
-    -translate-y-1/2
+    md:right-[clamp(16vh,8vw,18vh)]
+    md:top-1/2
+    md:-translate-y-1/2
+    top-[clamp(60vw,30vh,65vw)]
+    md:ml-[0]
+    ml-[clamp(-5vh,-10vw,-6vh)]
 ">
     <img 
         src="/Logo.png"
         alt="First Light mark"
         class="
-            h-[100vh]
+            h-[70vh]
+            md:h-[100vh]
             opacity-90
             pointer-events-none
             select-none
@@ -91,6 +98,7 @@ document.querySelector('#app').innerHTML = `
                 text-zinc-500
                 mb-[clamp(2vh,2vw,3vh)]
                 text-[clamp(2vh,1vw,5vh)]
+                md:text-[clamp(2vh,1vw,5vh)]
             ">
                 Our platform
             </p>
@@ -137,7 +145,7 @@ document.querySelector('#app').innerHTML = `
             flex
             items-center
             justify-center
-            min-h-[50vh]
+            md:min-h-[50vh]
         ">
 
             <!-- Ambient Glow -->
@@ -187,11 +195,12 @@ document.querySelector('#app').innerHTML = `
     </p>
 
     <h2 class="
-        font-[200]
+        md:font-[200]
+        font-[300]
         leading-[1.2]
         tracking-[-0.04em]
         mb-[clamp(8vh,8vw,12vh)]
-        text-[clamp(8vw,5vh,10vw)]
+        text-[clamp(6.5vw,5vh,8vw)]
         md:text-[clamp(4vh,4vw,6vh)]
         md: mt-[clamp(2.5vw,5vh,4vw)]
     ">
@@ -224,7 +233,7 @@ document.querySelector('#app').innerHTML = `
                     text-zinc-300
                     font-[100]
                     mb-[clamp(3vh,3vw,5vh)]
-                    text-[clamp(6vw,4vh,8vw)]
+                    text-[clamp(16vw,8vh,18vw)]
                     md:text-[clamp(8vh,4vw,14vh)]
                     leading-none
                 ">
@@ -235,7 +244,7 @@ document.querySelector('#app').innerHTML = `
                     mb-[clamp(2vh,1.5vw,3vh)]
                     font-[400]
                     tracking-[-0.02em]
-                    text-[clamp(2.2vh,1.4vw,2.8vh)]
+                    text-[clamp(6vw,3vh,8vw)]
                     md:text-[clamp(3vh,1.5vw,5vh)]
                 ">
                     ${title}
@@ -243,11 +252,12 @@ document.querySelector('#app').innerHTML = `
 
                 <p class="
                     mx-auto
-                    max-w-[26ch]
+                    md:max-w-[26ch]
+                    max-w-[30ch]
                     text-zinc-500
                     font-light
                     leading-[1.7]
-                    text-[clamp(1.8vh,1vw,2.1vh)]
+                    text-[clamp(4vw,2vh,6vw)]
                     md:text-[clamp(2vh,1vw,3vh)]
                 ">
                     ${copy}
@@ -314,8 +324,9 @@ document.querySelector('#app').innerHTML = `
                 <div class="
                     text-zinc-300
                     font-[100]
-                    mb-[clamp(3vh,3vw,5vh)]
-                    text-[clamp(6vw,4vh,8vw)]
+                    md:mb-[clamp(3vh,3vw,5vh)]
+                    mb-[clamp(4vw,2vh,6vw)]
+                    text-[clamp(12vw,6vh,14vw)]
                     md:text-[clamp(8vh,4vw,14vh)]
                     leading-none
                 ">
@@ -326,14 +337,14 @@ document.querySelector('#app').innerHTML = `
                     mb-[clamp(2vh,1.5vw,3vh)]
                     font-[400]
                     tracking-[-0.02em]
-                    text-[clamp(2.2vh,1.4vw,2.8vh)]
+                    text-[clamp(6vw,3vh,8vw)]
                     md:text-[clamp(3vh,1.5vw,5vh)]
                 ">
                     In-field Experience
                 </h3>
 
                 <p class="
-                    max-w-[35ch]
+                    md:max-w-[35ch]
                     text-zinc-400
                     font-light
                     leading-[1.4]
@@ -349,8 +360,9 @@ document.querySelector('#app').innerHTML = `
                 <div class="
                     text-zinc-300
                     font-[100]
-                    mb-[clamp(3vh,3vw,5vh)]
-                    text-[clamp(6vw,4vh,8vw)]
+                    md:mb-[clamp(3vh,3vw,5vh)]
+                    mb-[clamp(4vw,2vh,6vw)]
+                    text-[clamp(12vw,6vh,14vw)]
                     md:text-[clamp(8vh,4vw,14vh)]
                     leading-none
                 ">
@@ -361,14 +373,14 @@ document.querySelector('#app').innerHTML = `
                     mb-[clamp(2vh,1.5vw,3vh)]
                     font-[400]
                     tracking-[-0.02em]
-                    text-[clamp(2.2vh,1.4vw,2.8vh)]
+                    text-[clamp(6vw,3vh,8vw)]
                     md:text-[clamp(3vh,1.5vw,5vh)]
                 ">
                     New Domains
                 </h3>
 
                 <p class="
-                     max-w-[35ch]
+                    md:max-w-[35ch]
                     text-zinc-400
                     font-light
                     leading-[1.4]
@@ -383,8 +395,9 @@ document.querySelector('#app').innerHTML = `
                 <div class="
                     text-zinc-300
                     font-[100]
-                    mb-[clamp(3vh,3vw,5vh)]
-                    text-[clamp(6vw,4vh,8vw)]
+                    md:mb-[clamp(3vh,3vw,5vh)]
+                    mb-[clamp(4vw,2vh,6vw)]
+                    text-[clamp(12vw,6vh,14vw)]
                     md:text-[clamp(8vh,4vw,14vh)]
                     leading-none
                 ">
@@ -395,14 +408,14 @@ document.querySelector('#app').innerHTML = `
                     mb-[clamp(2vh,1.5vw,3vh)]
                     font-[400]
                     tracking-[-0.02em]
-                    text-[clamp(2.2vh,1.4vw,2.8vh)]
+                    text-[clamp(6vw,3vh,8vw)]
                     md:text-[clamp(3vh,1.5vw,5vh)]
                 ">
                     Choose Innovation
                 </h3>
 
                 <p class="
-                     max-w-[35ch]
+                    md:max-w-[35ch]
                     text-zinc-400
                     font-light
                     leading-[1.4]
@@ -424,76 +437,38 @@ document.querySelector('#app').innerHTML = `
     relative
     overflow-hidden
     px-[6vw]
-    pt-[clamp(10vh,5vw,12vh)]
-    pb-[clamp(6vh,3vw,8vh)]
+    md:pt-[clamp(10vh,5vw,12vh)]
+    md:pb-[clamp(6vh,3vw,8vh)]
+    pb-[6vw]
+    pt-[clamp(10vw,5vh,15vw)]
 ">
 
-    <!-- Main Footer Content -->
     <div class="
+        relative
+        z-10
         grid
         grid-cols-1
         md:grid-cols-2
-        gap-y-[clamp(8vh,8vw,12vh)]
         gap-x-[clamp(8vw,10vw,16vw)]
         items-start
     ">
 
-        <!-- Left -->
-        <div>
-
-            <img 
-            src="/header.png"
-            alt="First Light"
-            class="h-[clamp(5vh,2.5vw,7vh)] w-auto"
-        />
-
-        </div>
-
-        
-    </div>
-
-    <div class="
-        grid
-        grid-cols-1
-        md:grid-cols-2
-        gap-y-[clamp(8vh,8vw,12vh)]
-        gap-x-[clamp(8vw,10vw,16vw)]
-        items-start
-    ">
-
-         <!-- Bottom -->
-    <div class="
-        flex
-        flex-col
-        md:flex-row
-        justify-between
-        items-start
-        md:items-center
-        gap-[2vh]
-    ">
-
-        <p class="
-                    text-zinc-400
-                    font-light
-                    leading-[1.4]
-                    text-[clamp(1.8vh,1vw,2.1vh)]
-                    md:text-[clamp(1.8vh,0.9vw,3vh)]
-                    md: mt-[clamp(1.5vw,3vh,4vw)]
+        <!-- Contact: mobile first, desktop right under logo row -->
+        <div class="
+            order-1
+            md:order-3
+            md:col-start-2
+            md:row-start-2
+            md:text-right
         ">
-            © 2026 First Light Developers SA (Pty) Ltd. All rights reserved.
-        </p>
-
-    </div>
-
-        <!-- Right -->
-        <div class="md:text-right">
-
             <p class="
                 uppercase
                 font-[350]
                 tracking-[0.35em]
                 text-zinc-500
                 text-[clamp(2vh,1vw,5vh)]
+                md:mb-[clamp(0.4vw,1.2vh,1vw)]
+                mb-[clamp(2.4vw,1.2vh,4vw)]
             ">
                 Get In Touch
             </p>
@@ -514,13 +489,46 @@ document.querySelector('#app').innerHTML = `
             >
                 contact@firstlightdevelopers.com
             </a>
+        </div>
 
+        <!-- Logo: mobile second, desktop top-left -->
+        <div class="
+            order-2
+            md:order-1
+            md:col-start-1
+            md:row-start-1
+            md:mt-0
+            mt-[clamp(30vw,15vh,35vw)]
+        ">
+            <img 
+                src="/header.png"
+                alt="First Light"
+                class="h-[clamp(5vh,2.5vw,7vh)] w-auto"
+            />
+        </div>
+
+        <!-- Trademark: mobile third, desktop below logo left -->
+        <div class="
+            order-3
+    md:order-2
+    md:col-start-1
+    md:row-start-2
+    md:self-end
+     md:mt-0
+            mt-[2.5vh]
+        ">
+            <p class="
+                text-zinc-400
+                font-light
+                leading-[1.4]
+                text-[clamp(1.8vh,1vw,2.1vh)]
+                md:text-[clamp(1.8vh,0.9vw,3vh)]
+            ">
+                © 2026 First Light Developers SA (Pty) Ltd. All rights reserved.
+            </p>
         </div>
 
     </div>
-
-
-   
 
     <!-- Ambient Glow -->
     <div class="
@@ -530,9 +538,7 @@ document.querySelector('#app').innerHTML = `
         opacity-[0.03]
         bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.18),transparent_70%)]
     "></div>
-    
 
 </footer>
-
   </main>
 `
